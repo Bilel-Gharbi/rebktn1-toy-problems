@@ -33,8 +33,9 @@
 
 'use strict';
 
-var compose = function() {
-};
-
+var compose = (func1, func2) => (...args)  => func1(func2(...args))
+var compose = function (func1, func2) {
+    return func1(func2(...args))
+}
 var pipe = function() {
 };

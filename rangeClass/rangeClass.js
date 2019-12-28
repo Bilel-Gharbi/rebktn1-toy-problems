@@ -39,13 +39,30 @@
  */
 
 
-var Range = function(start, end, step) {
+var Range = function (start, end, step) {
+    var storage = []
+    this.arg = arguments;
+    this.start = start
+    this.end = end 
+    this.step = step
+
 };
 
 Range.prototype.size = function () {
+    if (this.arg.length-1 === 2) {
+        return this.end/this.step
+    }
+    if (this.arg.length-1 === 1) {
+        return this.end - this.start + 1
+    }
+    else {
+        return null
+   }
+  
 };
 
 Range.prototype.each = function (callback) {
+    
 };
 
 Range.prototype.includes = function (val) {

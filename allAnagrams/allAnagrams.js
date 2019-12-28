@@ -14,4 +14,17 @@
 
 var allAnagrams = function(string) {
   // Your code here.
+  let chars = string.split('')
+  let nbOfCombination = (string.length - 1) * string.length;
+
+  for (let i = 0; i < chars.length; i++){
+    Math.floor(Math.random()
+  }
+  let start = string[0];//start 
+
+  let rest = string.slice(1) //rest 
+  console.log(rest)
+  console.log(char)
+
+  return nbOfCombination
 };
