@@ -10,7 +10,6 @@ zeroSum([ 5, 7, 2, 9 ]) // false
 
 function zeroSum(arr) {
     let obj = {}
-    //let sum = Math.sum(...arr)
     for (let i = 0; i < arr.length; i++){
         if (obj[arr[i]]) {
             return true
@@ -18,6 +17,7 @@ function zeroSum(arr) {
         else {
             obj[-arr[i]]= 1
         }
+        console.log(obj)
     }
     return false
 }
