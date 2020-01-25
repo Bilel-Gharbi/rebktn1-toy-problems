@@ -27,4 +27,15 @@ function Node (val) {
 ​
 var reverseLinkedList = function(linkedList) {
   // your code here...
+  let result = {}
+
+  innerFunction= (result,linkedList)=>{
+    linkedList.forEach(el =>{
+      let x = Node(el)
+      console.log(x)
+    })
+    
+  }
+  innerFunction(result,linkedList)
+  return result
 };
